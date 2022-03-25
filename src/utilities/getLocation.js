@@ -1,4 +1,7 @@
 const axios = require("axios").default;
+const { geoToken } = require("../../config");
+
+console.log("getkey", process.env);
 
 const getGeocode = (address, callback) => {
   const options = {
@@ -7,7 +10,7 @@ const getGeocode = (address, callback) => {
     params: { address: address, language: "en" },
     headers: {
       "X-RapidAPI-Host": "trueway-geocoding.p.rapidapi.com",
-      "X-RapidAPI-Key": "bac5f06a9fmshd02a9f3c2e713cep16c968jsn34dcbc40a36a",
+      "X-RapidAPI-Key": geoToken,
     },
   };
   axios

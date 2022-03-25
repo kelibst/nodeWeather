@@ -1,6 +1,7 @@
 const axios = require("axios").default;
 const getGeocode = require("./utilities/getLocation");
 
+
 getGeocode("Accra", (err, data) => {
   console.log("error", err);
   console.log("data", data);
