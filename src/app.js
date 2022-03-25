@@ -1,9 +1,16 @@
+const path = require("path");
 const express = require("express");
 
 const app = express();
+const publicDir = path.join(__dirname, "./public");
+
+app.set("view engine", "hbs");
+
+app.use(express.static(publicDir));
 
 app.get("", (req, res) => {
-  res.send("Hello world!");
+  res.render("index");
+  // res.send("Hello world!");
 });
 
 app.get("/help", (req, res) => {
