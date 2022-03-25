@@ -1,8 +1,6 @@
 const axios = require("axios").default;
 const { geoToken } = require("../../config");
 
-console.log("getkey", process.env);
-
 const getGeocode = (address, callback) => {
   const options = {
     method: "GET",
