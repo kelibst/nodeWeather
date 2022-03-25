@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kelibst/nodeWeather#readme",
   "dependencies": {
+    "axios": "^0.26.1",
     "postman-request": "^2.88.1-postman.31"
   }
 }
