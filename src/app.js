@@ -1,20 +1,39 @@
 const path = require("path");
 const express = require("express");
+const hbs = require("hbs");
 
 const app = express();
+
 const publicDir = path.join(__dirname, "./public");
+const viewsPath = path.join(__dirname, "./public/assets/views");
+const partials = path.join(__dirname, "./public/assets/partials");
+const currentYear = new Date().getFullYear();
 
 app.set("view engine", "hbs");
+app.set("views", viewsPath);
+hbs.registerPartials(partials);
 
 app.use(express.static(publicDir));
 
 app.get("", (req, res) => {
-  res.render("index");
-  // res.send("Hello world!");
+  res.render("index", {
+    title: "Weather App",
+    year: currentYear,
+  });
+});
+
+app.get("/about", (req, res) => {
+  res.render("about", {
+    title: "About Weather App",
+    year: currentYear,
+  });
 });
 
 app.get("/help", (req, res) => {
-  res.send("Welcome to the help page.");
+  res.render("help", {
+    title: "Help Weather App",
+    year: currentYear,
+  });
 });
 
 app.listen(3000, () => {

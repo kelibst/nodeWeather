@@ -34,3 +34,47 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.header-container {
+  margin: 1rem;
+}
+
+.headerTitle {
+  font-weight: bolder;
+  color: brown;
+}
+
+ul.ul-list {
+  display: flex;
+  padding-top: 10;
+}
+
+li.nav-li {
+  padding-right: 10px;
+}
+
+a.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+  color: brown;
+}
+
+footer {
+  padding: 10px;
+}
+
+.footer-link {
+  color: brown;
+  text-decoration: none;
+  padding: 10;
+}
+h4.subtitle {
+  margin: 1rem 0;
+  font-size: 20px;
+  color: darkgray;
+}
