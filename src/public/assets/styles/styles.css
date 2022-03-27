@@ -66,6 +66,7 @@ a.nav-link:hover {
 
 footer {
   padding: 10px;
+  border-top: 1px solid gray;
 }
 
 .footer-link {
@@ -81,4 +82,56 @@ h4.subtitle {
 
 .content {
   padding: 20px;
+}
+.formContainer {
+  padding: 10;
+  margin: 10;
+}
+
+input.locInp {
+  padding: 10;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.formBtn {
+  padding: 10 20;
+  border-radius: 5px;
+  background: hsl(242deg 88% 56%);
+  color: white;
+  font-weight: bolder;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 300px;
+  background: lightseagreen;
+  margin: auto;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+.weather {
+  margin: 30px 10px;
+}
+.weatherDet {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.weatherDet > p,
+.weatherTemp > li {
+  margin: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block;
 }

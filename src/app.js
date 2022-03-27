@@ -58,13 +58,17 @@ app.get("/weather", (req, res) => {
               error: forErr,
             });
           }
-          console.log("data weather", forData);
           const { main, description } = forData.weather[0];
+          const { temp, humidity, temp_min, temp_max } = forData.main;
           res.send({
             location: geoData.address,
             weather: {
-              main: main,
-              description: description,
+              main,
+              description,
+              temp_min,
+              temp_max,
+              temp,
+              humidity,
             },
           });
         });

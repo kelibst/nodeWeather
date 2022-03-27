@@ -7,8 +7,39 @@
     <title>Weather Application</title>
   </head>
   <body>
-    {{>header}}
-    <script src="assets/js/app.js"></script>
+    <div class="container">
+       {{>header}}
+    <div class="weather">
+      <div class="icon-container">
+          Sun
+      </div>
+      <div class="error-container d-none">
+        <p class="error"></p>
+      </div>
+      <div class="weatherDet">
+          <p class="weatherTitle">Title</p>
+      <p class="weatherDesc">Description</p>
+      <p class="weatherLoc">location</p>
+      <ul class="weatherTemp">
+        <li class="weatherMinTemp">MinTemp</li>
+        <li class="weatherMinTemp">MaxTemp</li>
+        <li class="weatherMinTemp">Temp</li>
+      </ul>
+      </div>
+    
+    </div>
+    <div class="formContainer">
+      <form action="#" class="locForm">
+      <input class="locInp" type="text" name="location" placeholder="Enter location to search!">
+      
+      <button class="formBtn" type="submit">Submit</button>
+    </form>
+    </div>
+    
+    
     {{>footer}}
+    </div>
+   
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
