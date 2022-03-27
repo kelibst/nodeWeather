@@ -6,6 +6,9 @@ const error = document.querySelector(".error");
 const weatherTitle = document.querySelector(".weatherTitle");
 const weatherDesc = document.querySelector(".weatherDesc");
 const weatherLoc = document.querySelector(".weatherLoc");
+const weatherTemp = document.querySelector(".weatherTemp");
+const weatherMaxTemp = document.querySelector(".weatherMaxTemp");
+const weatherMinTemp = document.querySelector(".weatherMinTemp");
 
 const getWeather = (location, callback) => {
   fetch(`http://localhost:3000/weather?search=${location}`).then((res) => {
@@ -21,20 +24,43 @@ const getWeather = (location, callback) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   getWeather(loc.value, (error, data) => {
     if (error) {
       errorCont.classList.contains("d-none") &&
         errorCont.classList.remove("d-none");
-      errorCont.classList;
-      innerText = error;
+      errorCont.innerText = error;
     } else {
-      console.log(errorCont.classList.contains("d-none"));
+      const { weather, location } = data;
+      const elements = [
+        { node: weatherTitle, name: "Title", value: weather.main },
+        {
+          node: weatherDesc,
+          name: "Description",
+          value: weather.description,
+        },
+        { node: weatherLoc, name: "Location", value: location },
+        {
+          node: weatherMaxTemp,
+          name: "Maximum Temperature",
+          value: weather.temp_max,
+        },
+        {
+          node: weatherMinTemp,
+          name: "Minimum Temperature",
+          value: weather.temp_min,
+        },
+        {
+          node: weatherTemp,
+          name: "Temperature",
+          value: weather.temp,
+        },
+      ];
       !errorCont.classList.contains("d-none") &&
         errorCont.classList.add("d-none");
-      weatherTitle.innerText = data.weather.main;
-      weatherDesc.innerText = data.weather.description;
-      weatherLoc.innerText = data.location;
+      elements.map((ele) => {
+        ele.node.innerText = `${ele.name}: ${ele.value}`;
+      });
     }
   });
-  console.log(e);
 });

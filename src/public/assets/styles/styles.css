@@ -123,7 +123,7 @@ input.locInp {
 }
 
 .weatherDet > p,
-.weatherTemp > li {
+.weathertmp > li {
   margin: 1rem;
   font-size: 20px;
   font-weight: bold;
@@ -134,4 +134,11 @@ input.locInp {
 }
 .d-block {
   display: block;
+}
+
+.icon-container > p {
+  padding-top: 40px;
+  padding-left: 10px;
+  color: white;
+  font-size: 20px;
 }
