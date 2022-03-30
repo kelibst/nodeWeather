@@ -142,3 +142,12 @@ input.locInp {
   color: white;
   font-size: 20px;
 }
+
+.error-container {
+  margin: 1rem;
+  background: red;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 20;
+}

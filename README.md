@@ -1,56 +1,64 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# NodeJs Weather Application
 
-> Description the project.
-
+> A simple Nodejs Application built with express and template view enginve named hbs
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- NodeJs
+- Express, HBS, Axios
+- HTML, Css,
+
+# Screenshot
+
+![Screenshot](./screenshot.gif)
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- install NPM
+
 ### Setup
 
-### Install
+Run the following code from the terminal
+
+1. Clone the repo
+
+- git clone
+
+2. change dirrectory into the applications directory
+
+- cd nodeWeather
+
+3. install the required dependencies
+
+- npm install
+
+4. Start the application
+
+- node src/app.js
 
 ### Usage
 
-### Run tests
+open you browser and navigate to
 
-### Deployment
-
-
+http://localhost:3000/
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Github: [@kelibst](https://github.com/kelibst)
+- Twitter: [@keli_booster](https://twitter.com/keli_booster)
+- LinkedIn: [Kekeli (Jiresse) Dogbevi](https://www.linkedin.com/in/kelibst/)
 
 ## 🤝 Contributing
 
