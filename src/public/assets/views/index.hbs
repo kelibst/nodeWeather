@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div class="container">
+       {{>header}}
+    <div class="weather">
+      <div class="icon-container">
+          <p>Weather</p> 
+      </div>
+      <div class="error-container d-none">
+        <p class="error"></p>
+      </div>
+      <div class="weatherDet">
+          <p class="weatherTitle">Title</p>
+      <p class="weatherDesc">Description</p>
+      <p class="weatherLoc">location</p>
+      <ul class="weathertmp">
+        <li class="weatherMinTemp">MinTemp</li>
+        <li class="weatherMaxTemp">MaxTemp</li>
+        <li class="weatherTemp">Temp</li>
+      </ul>
+      </div>
+    
+    </div>
+    <div class="formContainer">
+      <form action="#" class="locForm">
+      <input class="locInp" type="text" name="location" placeholder="Enter location to search!">
+      
+      <button class="formBtn" type="submit">Submit</button>
+    </form>
+    </div>
+    
+    
+    {{>footer}}
+    </div>
+   
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

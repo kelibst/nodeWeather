@@ -1,0 +1,26 @@
+{
+  "name": "nodeweather",
+  "version": "1.0.0",
+  "description": "a nodejs weather application",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelibst/nodeWeather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelibst/nodeWeather/issues"
+  },
+  "homepage": "https://github.com/kelibst/nodeWeather#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "postman-request": "^2.88.1-postman.31"
+  }
+}
